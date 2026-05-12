@@ -1,0 +1,443 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+
+    background-image:url("img/fundo-loja.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    min-height:100vh;
+
+    color:white;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header{
+
+    width:100%;
+
+    height:95px;
+
+    background:rgba(20,20,20,0.92);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 40px;
+
+    border-bottom:2px solid #ff6b00;
+
+    backdrop-filter:blur(4px);
+}
+
+/* =========================
+   MENU ESQUERDA
+========================= */
+
+.menu-esquerda{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+}
+
+/* =========================
+   BOTÕES ÍCONES
+========================= */
+
+.icon-btn{
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:34px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.icon-btn:hover{
+
+    color:#ff6b00;
+
+    transform:scale(1.1);
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo img{
+
+    width:365px;
+  
+}
+
+/* =========================
+   MENU
+========================= */
+
+.menu{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:30px;
+}
+
+.menu a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:20px;
+
+    transition:0.3s;
+}
+
+.menu a:hover{
+
+    color:#ff6b00;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.roupas-container{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    padding:60px 20px;
+}
+
+/* =========================
+   PAINEL TRANSPARENTE
+========================= */
+
+.painel{
+
+    width:100%;
+
+    max-width:900px;
+
+    background:rgba(0,0,0,0.45);
+
+    backdrop-filter:blur(8px);
+
+    border-radius:25px;
+
+    padding:40px;
+
+    box-shadow:0 0 25px rgba(0,0,0,0.5);
+}
+
+/* =========================
+   TITULO
+========================= */
+
+.painel h2{
+
+    font-size:60px;
+
+    margin-bottom:45px;
+
+    color:white;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.camisa-card,
+.calca-card{
+
+    margin-bottom:50px;
+}
+
+.camisa-card h3,
+.calca-card h3{
+
+    font-size:42px;
+
+    margin-bottom:35px;
+
+    color:white;
+}
+
+/* =========================
+   OPÇÕES
+========================= */
+
+.opcoes{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:35px;
+}
+
+/* =========================
+   LOSANGO
+========================= */
+
+.losango{
+
+    cursor:pointer;
+}
+
+/* ESCONDE INPUT */
+
+.losango input{
+
+    display:none;
+}
+
+/* LOSANGO */
+
+.losango span{
+
+    width:120px;
+
+    height:120px;
+
+    background:#444;
+
+    border:3px solid #ff6b00;
+
+    transform:rotate(45deg);
+
+    border-radius:12px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    transition:0.3s;
+
+    box-shadow:0 0 15px rgba(0,0,0,0.4);
+
+    position:relative;
+}
+
+/* TEXTO NORMAL */
+
+.losango span::before{
+
+    content:"";
+
+    position:absolute;
+}
+
+/* TEXTO CENTRAL */
+
+.losango span{
+
+    padding:10px;
+
+    line-height:20px;
+
+    user-select:none;
+}
+
+/* HOVER */
+
+.losango span:hover{
+
+    background:#555;
+
+    transform:rotate(45deg) scale(1.05);
+}
+
+/* SELECIONADO */
+
+.losango input:checked + span{
+
+    background:#ff6b00;
+
+    color:#111;
+
+    transform:rotate(45deg) scale(1.08);
+
+    border:3px solid white;
+}
+
+/* =========================
+   BOTÃO SALVAR
+========================= */
+
+.btn-salvar{
+
+    width:150px;
+
+    height:35px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#ff6b00;
+
+    color:white;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.btn-salvar:hover{
+
+    opacity:0.85;
+
+    transform:scale(1.03);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+
+    width:100%;
+
+    height:70px;
+
+    background:rgba(20,20,20,0.95);
+
+    border-top:2px solid #ff6b00;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 40px;
+
+    margin-top:40px;
+}
+
+.footer p{
+
+    font-size:18px;
+}
+
+.redes{
+
+    display:flex;
+
+    gap:20px;
+}
+
+.redes i{
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.redes i:hover{
+
+    color:#ff6b00;
+
+    transform:scale(1.1);
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media(max-width:900px){
+
+    .header{
+
+        flex-direction:column;
+
+        height:auto;
+
+        padding:20px;
+
+        gap:20px;
+    }
+
+    .menu{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+    }
+
+    .painel h2{
+
+        font-size:45px;
+
+        text-align:center;
+    }
+
+    .camisa-card h3,
+    .calca-card h3{
+
+        font-size:32px;
+    }
+
+    .opcoes{
+
+        justify-content:center;
+    }
+
+    .footer{
+
+        flex-direction:column;
+
+        height:auto;
+
+        gap:15px;
+
+        padding:20px;
+    }
+
+}

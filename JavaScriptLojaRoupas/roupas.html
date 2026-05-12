@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlon Roupas</title>
+
+    <link rel="stylesheet" href="roupas.css">
+
+    <!-- ICONES -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="menu-esquerda">
+
+            <button class="icon-btn" onclick="abrirBusca()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button class="icon-btn" onclick="abrirCarrinho()">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+
+        </div>
+
+        <div class="logo">
+
+            <a href="index.html">
+
+                <img src="img/lgpng.png" alt="Atlon">
+
+            </a>
+
+        </div>
+
+        <nav class="menu">
+
+            <a href="#">Coleções</a>
+            <a href="#">Novidades</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+
+        </nav>
+
+    </header>
+
+    <!-- CONTEUDO -->
+
+    <section class="roupas-container">
+
+        <div class="painel">
+
+            <h2>Seu Perfil</h2>
+
+            <!-- CAMISA -->
+
+            <div class="camisa-card">
+
+                <h3>Tipo de Camisa</h3>
+
+                <div class="opcoes">
+
+                    <label class="losango">
+                        <input type="radio" name="camisa" value="Social">
+                        <span>Social</span>
+                    </label>
+
+                    <label class="losango">
+                        <input type="radio" name="camisa" value="Esporte">
+                        <span>Esporte</span>
+                    </label>
+
+                    <label class="losango">
+                        <input type="radio" name="camisa" value="Polo">
+                        <span>Polo</span>
+                    </label>
+
+                    <label class="losango">
+                        <input type="radio" name="camisa" value="Casual">
+                        <span>Casual</span>
+                    </label>
+
+                </div>
+
+            </div>
+
+            <!-- CALÇA -->
+
+            <div class="calca-card">
+
+                <h3>Tipo de Calça</h3>
+
+                <div class="opcoes">
+
+                    <label class="losango">
+                        <input type="radio" name="calca" value="Militar">
+                        <span>Militar</span>
+                    </label>
+
+                    <label class="losango">
+                        <input type="radio" name="calca" value="Esporte">
+                        <span>Esporte</span>
+                    </label>
+
+                    <label class="losango">
+                        <input type="radio" name="calca" value="Social">
+                        <span>Social</span>
+                    </label>
+
+                    <label class="losango">
+                        <input type="radio" name="calca" value="Casual">
+                        <span>Casual</span>
+                    </label>
+
+                </div>
+
+            </div>
+
+            <button class="btn-salvar" onclick="salvarRoupas()">
+
+                Salvar
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <p>Política de Privacidade</p>
+
+        <p>©Todos os direitos reservados 2026</p>
+
+        <div class="redes">
+
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+
+        </div>
+
+    </footer>
+
+</body>
+<script src="roupas.js"></script>
+</html>

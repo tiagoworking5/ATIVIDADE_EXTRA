@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eletronics</title>
+
+    <link rel="stylesheet" href="eletronics.css">
+
+    <!-- ICONES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="menu-left">
+
+            <button class="icon-btn" onclick="abrirBusca()">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+            <button class="icon-btn" onclick="abrirCarrinho()">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+            </button>
+
+        </div>
+
+        <!-- LOGO -->
+
+        <div class="logo">
+
+            <a href="index.html">
+
+                <img src="img/lg-png.png" alt="Eletronics">
+
+            </a>
+
+        </div>
+
+        <!-- MENU -->
+
+        <nav class="menu">
+
+            <a href="#">Produtos</a>
+            <a href="#">Ofertas</a>
+            <a href="#">Tecnologia</a>
+            <a href="#">Contato</a>
+
+        </nav>
+
+    </header>
+
+    <!-- CONTAINER -->
+
+    <section class="eletronics-container">
+
+        <div class="painel">
+
+            <h2>Escolha seus Produtos</h2>
+
+            <div class="cards-container">
+
+                <!-- DRONE -->
+
+                <label class="card-produto">
+
+                    <input class="input-card" type="checkbox" name="produto" value="Drone">
+
+                    <div class="card">
+
+                        <img src="img/drone.webp" alt="Drone">
+
+                        <h3>Drone</h3>
+
+                    </div>
+
+                </label>
+
+                <!-- HEADPHONE -->
+
+                <label class="card-produto">
+
+                    <input class="input-card" type="checkbox" name="produto" value="Headphone">
+
+                    <div class="card">
+
+                        <img src="img/fone.webp" alt="Headphone">
+
+                        <h3>Headphone</h3>
+
+                    </div>
+
+                </label>
+
+                <!-- GAME -->
+
+                <label class="card-produto">
+
+                    <input class="input-card" type="checkbox" name="produto" value="Game">
+
+                    <div class="card">
+
+                        <img src="img/game.png" alt="Game">
+
+                        <h3>Game</h3>
+
+                    </div>
+
+                </label>
+
+                <!-- SMARTWATCH -->
+
+                <label class="card-produto">
+
+                    <input class="input-card" type="checkbox" name="produto" value="Smartwatch">
+
+                    <div class="card">
+
+                        <img src="img/relogio.jpg" alt="Smartwatch">
+
+                        <h3>Smartwatch</h3>
+
+                    </div>
+
+                </label>
+
+                <!-- SMARTPHONE -->
+
+                <label class="card-produto">
+
+                    <input class="input-card" type="checkbox" name="produto" value="Smartphone">
+
+                    <div class="card">
+
+                        <img src="img/smartfone.webp" alt="Smartphone">
+
+                        <h3>Smartphone</h3>
+
+                    </div>
+
+                </label>
+
+                <!-- SMART TV -->
+
+                <label class="card-produto">
+
+                    <input class="input-card" type="checkbox" name="produto" value="Smart TV">
+
+                    <div class="card">
+
+                        <img src="img/smarttv.webp" alt="Smart TV">
+
+                        <h3>Smart TV</h3>
+
+                    </div>
+
+                </label>
+
+            </div>
+
+            <br>
+
+            <button class="btn-salvar" onclick="salvarProdutos()">
+
+                Salvar
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <p>© Todos os direitos reservados 2026</p>
+
+        <div class="redes">
+
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+
+        </div>
+
+    </footer>
+
+
+
+</body>
+<script src="eletronics.js"></script>
+
+</html>
